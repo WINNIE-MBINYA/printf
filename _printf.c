@@ -1,4 +1,4 @@
-#include "custom_printf.h"  // Assuming custom header file name
+#include "main.h"
 
 void clean_up_va_list(va_list args, custom_buffer_t *output);
 int process_printf(const char *format, va_list args, custom_buffer_t *output);
