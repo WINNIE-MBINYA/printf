@@ -1,4 +1,3 @@
-
 #include "main.h"
 
 void print_buffer(char buffer[], int *buff_ind);
@@ -8,13 +7,17 @@ void print_buffer(char buffer[], int *buff_ind);
  * @format: format.
  * Return: Printed chars.
  */
+
 int _printf(const char *format, ...)
 {
-	int i, printed = 0, printed_chars = 0;
+	int i, printed, printed_chars;
 	int flags, width, precision, size, buff_ind = 0;
 	va_list list;
 	char buffer[BUFF_SIZE];
 
+	i = 0;
+	printed = 0;
+	printed_chars = 0;
 	if (format == NULL)
 		return (-1);
 
